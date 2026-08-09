@@ -1,0 +1,71 @@
+Credit to Nycro and Dozezoze for inspiration, and Dozezoze again for programming advice.
+
+
+
+Full feature list (every option listed can be disabled in the config at any time):
+
+ - Disabling all events, weather, meteor falls, enemy spawns, tombstones on death, and falling stars
+ - Disabling boss drops, and enemy item, coin, heart, and mana star drops
+
+ - Configurable (on death or respawn) despawning of all bosses, NPCs, projectiles, items, gores, dusts, and combat text
+
+ - Configurable normal respawn timer override and respawn health value
+ - Clear the chatbox on respawn (configurable delay)
+
+ - In-depth fight statistics
+ - Can track attempt number, final boss health, number of hits taken, fight time, slowdown, and "phases" facilitated by boss summons (such as Creepers)
+ - Full support (or at least the best possible) for fighting multiple bosses at the same time, including tracking every above stat pertaining to individual bosses
+ - Tracking boss and boss minion despawns, with warnings when something does
+
+ - Permanent buffs and infinite consumables (configurable stack number)
+ - Disabling boss aftermath
+
+ - Instant death, configurable type (nohit, no damage, or no iframes) and trigger (disabled, bosses only, or everything)
+ - Defiled config :)
+ - Spawning extra copies of bosses. This has not been extensively tested and may not work as desired.
+
+ - Comprehensive Calamity Mod support!
+ - Toggling debuffs (Whispering Maelstrom and Providence border) instakilling in a nohit setting
+ - Boss Rush is fully supported (so it won't spam messages, and gives a cute stats overview once you die or win)
+ - Removing the Terminus "charge up" period
+
+ - Comprehensive Infernum Mode support (no config options for this one I'm afraid)!
+
+ An item to summon mobile storages (piggy bank, safe, defender's forge, and void bag) around you (this is stretching it but I think it still fits the mod theming)
+
+
+Currently has six chat commands (all accept boss nicknames and improper formatting):
+
+/sessionattempts [optional boss name(s)]
+ - Displays your SESSION attempt count for all bosses or all specified bosses. 
+ - Aliases: attempts
+
+/totalattempts [optional boss name(s)]
+ - Displays your TOTAL attempt count for all bosses or all specified bosses. 
+ - Aliases: total
+
+/startnewsession [optional boss name(s)]
+ - Creates a new session for all bosses or all specified bosses. Sessions are a way to track attempt counts without having to lose track of your total number of attempts.
+ - WARNING: this will change the session attempt count to 0, and CANNOT be undone automatically. Please do not mix this up with /sessionattempts.
+ - Aliases: newsession, startnew, startsession
+
+/setattempts [boss name] [desired attempt count]
+ - Sets your SESSION attempt count for the specified boss. 
+ - WARNING: 0 may be used in place of a boss name, in which case ALL session attempts will be wiped.
+
+ /settotalattempts [boss name] [desired attempt count]
+ - Sets your TOTAL attempt count for the specified boss. If the selected value is lower than your current session attempt count, that will be adjusted as well.
+ - WARNING: 0 may be used in place of a boss name, in which case ALL attempts will be wiped.
+
+/bossrush [optional boss name(s)]
+ - Displays the SESSION Boss Rush death count for all bosses or all specified bosses. For Boss Rush (event) attempts, use /sessionattempts bossrush.
+ - Aliases: br, bossrushdeaths, brdeaths
+
+/bossrushtotal [optional boss name(s)]
+ - Displays the TOTAL Boss Rush death count for all bosses or all specified bosses. For Boss Rush (event) attempts, use /totalattempts bossrush.
+ - Aliases: tbr, totalbossrushdeaths, totalbrdeaths
+
+
+
+If you encounter any bugs, please let me know with as much detail as possible. I can't fix it if I can't recreate it!
+Additionally, I'm always open to critique or suggestions, so feel free to ask about anything along those lines.

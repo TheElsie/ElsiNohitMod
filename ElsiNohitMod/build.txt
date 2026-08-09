@@ -1,0 +1,5 @@
+displayName = Elsi's Nohit Meowd
+author = Elsi
+version = 1.0.1
+weakReferences = CalamityMod, InfernumMode
+sortAfter = CalamityMod, InfernumMode

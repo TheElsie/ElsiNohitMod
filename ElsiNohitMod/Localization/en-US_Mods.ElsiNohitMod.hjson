@@ -1,0 +1,450 @@
+Configs: {
+	TheConfigForThisMod: {
+		DisplayName: Elsi's Mod Config
+
+		Headers: {
+			Toggles: Toggles
+			Despawns: Despawn Settings
+			Respawns: Respawn Settings
+			Testing: Testing Settings
+			Nohitting: The Fun Stuff
+			Gameplay: Gameplay Settings
+			Presets: Presets
+		}
+	}
+
+	Toggles: {
+		DisableEvents: {
+			Tooltip: If enabled, events will not occur naturally and will be disabled if currently active. Includes weather events such as rain.
+			Label: Disable Events
+		}
+
+		DisableEnemySpawning: {
+			Tooltip: If enabled, hostile monsters (including bosses) will no longer spawn naturally.
+			Label: Disable Enemy Spawning
+		}
+
+		DisableTombstones: {
+			Tooltip: If enabled, the player will no longer drop tombstones on death.
+			Label: Disable Tombstones
+		}
+
+		DisableManaStars: {
+			Tooltip: If enabled, enemies will no longer drop mana stars on death.
+			Label: Disable Mana Stars
+		}
+
+		DisableHearts: {
+			Tooltip: If enabled, enemies will no longer drop hearts on death. Does not affect bosses.
+			Label: Disable Dropped Hearts
+		}
+
+		DisableCoins: {
+			Tooltip: If enabled, enemies will no longer drop coins on death. Does not affect bosses.
+			Label: Disable Dropped Coins
+		}
+
+		DisableItems: {
+			Tooltip: If enabled, enemies will no longer drop items on death. Does not affect bosses.
+			Label: Disable Dropped Items
+		}
+
+		DisableFallingStars: {
+			Tooltip: If enabled, stars will no longer fall from the sky at night.
+			Label: Disable Falling Stars
+		}
+
+		DisableBossDrops: {
+			Label: Disable Boss Drops
+			Tooltip: If enabled, bosses will no longer drop anything on death. Additionally, they will not play special death animations or spawn death boxes.
+		}
+	}
+
+	DespawnEnum: {
+		OnRespawn: {
+			Tooltip: ""
+			Label: On Respawn
+		}
+
+		OnDeath: {
+			Tooltip: ""
+			Label: On Death
+		}
+
+		Disabled: {
+			Tooltip: ""
+			Label: Disabled
+		}
+
+		Tooltip: ""
+	}
+
+	Despawns: {
+		DespawnItems: {
+			Tooltip: Despawns all grounded items.
+			Label: Despawn Items
+		}
+
+		DespawnMisc: {
+			Tooltip: Despawns all dusts, gores, and combat text.
+			Label: Despawn Miscellanious Visuals
+		}
+
+		DespawnFriendlyProj: {
+			Tooltip: Despawns all friendly projectiles.
+			Label: Despawn Friendly Projectiles
+		}
+
+		DespawnEnemyProj: {
+			Tooltip: Despawns all enemy projectiles.
+			Label: Despawn Enemy Projectiles
+		}
+
+		DespawnFriendlies: {
+			Tooltip: Despawns all critters and Town NPCs.
+			Label: Despawn Friendly NPCs
+		}
+
+		DespawnEnemies: {
+			Tooltip: Despawns all enemies, not including bosses.
+			Label: Despawn Hostile NPCs
+		}
+
+		DespawnBosses: {
+			Tooltip: Despawns any active bosses.
+			Label: Despawn Bosses
+		}
+
+		DespawnSetting: {
+			Tooltip: Toggle when despawn logic should occur.
+			Label: Despawn Setting
+		}
+
+		DespawnToggle: {
+			Tooltip: Customize what should be despawned.
+			Label: Despawn Settings
+		}
+	}
+
+	Respawns: {
+		RespawnHP: {
+			Label: Respawn at Max HP
+			Tooltip: ""
+		}
+
+		ClearChat: {
+			Label: Clear Chat On Respawn
+			Tooltip: ""
+		}
+
+		ClearDelay: {
+			Label: Clear Chat Delay
+			Tooltip: The delay after respawning in frames before the chat is cleared. Only takes effect if "Clear Chat On Respawn" is on.
+		}
+
+		ShowAttempt: {
+			Label: Show Attempt Number On Respawn
+			Tooltip: ""
+		}
+
+		ShowAttemptLength: {
+			Label: Attempt Number Lifespan
+			Tooltip: How long in frames the current attempt number remains on screen. Only takes effect if "Show Attempt Number On Respawn" is on.
+		}
+
+		OverrideTimer: {
+			Label: Override Respawn Timer
+			Tooltip: Replaces vanilla respawn times.
+		}
+
+		RespawnTime: {
+			Label: Respawn Time
+			Tooltip: How long in frames before the player respawns. Only takes effect if "Override Respawn Timer" is on.
+		}
+
+		AttemptColor: {
+			Tooltip: ""
+			Label: Attempt Number Popup Color
+		}
+
+		ResetMusic: {
+			Label: Reset Music On Respawn
+			Tooltip: If enabled, the music playing at the time of death will be abruptly stopped and normal music will immediately replace it.
+		}
+	}
+
+	DespawnToggles.Tooltip: ""
+
+	Testing: {
+		FightStats: {
+			Tooltip: Customize what should be shown once a boss fight ends.
+			Label: Fight Statistics
+		}
+
+		StatsColor: {
+			Tooltip: The color the fight breakdown will appear in.
+			Label: Text Color
+		}
+
+		ShowHits: {
+			Tooltip: If enabled, the number of hits suffered by the player will be displayed.
+			Label: Show Hits Taken
+		}
+
+		ShowDPS: {
+			Tooltip: If enabled, the degree to which your dps output diverged from the average will be displayed.
+			Label: Show DPS Deviation
+		}
+
+		ShowHealth: {
+			Tooltip: If enabled, the health of the boss when the fight ended will be displayed. Does not support all multi-segmented bosses.
+			Label: Show Boss Health
+		}
+
+		ShowSlowdown: {
+			Tooltip: If enabled, the difference between in-game time (IGT) and real-time (RTA) will be displayed.
+			Label: Show Fight Slowdown
+		}
+
+		ShowTime: {
+			Tooltip: If enabled, the in-game time (IGT) will be displayed.
+			Label: Show Fight Time
+		}
+
+		ShowAttempts: {
+			Tooltip: If enabled, either your session or total attempt number for will be displayed.
+			Label: Show Session Attempts
+		}
+
+		ShowStats: {
+			Tooltip: If enabled, a chat message will appear after you or the boss dies listing fight stats.
+			Label: Show End-Of-Fight Statistics
+		}
+
+		CombineStats: {
+			Label: Combine Individual Fight Stats
+			Tooltip: If enabled, statistics pertaining to individual bosses will not be shown following fights with multiple bosses. Also affects some multi-segmented bosses, such as The Twins.
+		}
+
+		Specifics: {
+			Label: Show Extra Details
+			Tooltip: If enabled, various other settings will display supplementary data.
+		}
+
+		DistinguishSegments: {
+			Label: Distinguish Between Boss Segments
+			Tooltip: If enabled, health stats for non-boss boss enemies such as BoC's Creepers and Skeletron's Hands will be displayed separately.
+		}
+
+		WarningColor: {
+			Label: Warning Text Color
+			Tooltip: The color warning text such as despawn notices will appear in.
+		}
+
+		CommandColor: {
+			Label: Command Color
+			Tooltip: ""
+		}
+
+		Session: {
+			Label: Start New Session On Boss Death
+			Tooltip: If enabled, your current session for a boss will be reset upon defeating said boss (specifically, the next time you spawn it in).
+		}
+	}
+
+	Nohitting: {
+		ExtraBosses: {
+			Tooltip: Spawns however many extra copies of bosses; don't expect this to work properly under all circumstances. I don't know why you would want to do this.
+			Label: Extra Bosses
+		}
+
+		Defiled: {
+			Tooltip: Revival of an old Calamity item.
+			Label: Defiled
+		}
+
+		Nohit: {
+			Tooltip: Only has an effect if Instant Death is enabled.
+			Label: Nohitting Setup
+		}
+
+		InstantDeath: {
+			Tooltip: If enabled, being hit/taking damage under the selected condition will instantly kill you.
+			Label: Instant Death
+		}
+	}
+
+	DefiledEnum: {
+		TrueDefiled: {
+			Tooltip: Disables ALL forms of flight.
+			Label: True Defiled
+		}
+
+		NoWingFlight: {
+			Tooltip: Disables wing flight, not including rocket boots or mounts.
+			Label: No Wing Flight
+		}
+
+		Disabled: {
+			Tooltip: ""
+			Label: Disabled
+		}
+
+		Tooltip: ""
+	}
+
+	NohitEnum: {
+		NoIFrames: {
+			Tooltip: Disables all IFrames.
+			Label: No IFrames
+		}
+
+		NoDamage: {
+			Tooltip: Taking damage kills you; dodges work, but negative life regen or debuffs will be lethal.
+			Label: No Damage
+		}
+
+		Default: {
+			Tooltip: Getting hit kills you; dodges are disabled, but self-damage is allowed.
+			Label: Default
+		}
+
+		Tooltip: ""
+	}
+
+	TriggerEnum: {
+		Everything: {
+			Tooltip: Everything will kill you.
+			Label: Everything
+		}
+
+		BossesOnly: {
+			Tooltip: Instant death only occurs whilst a boss is alive.
+			Label: Bosses Only
+		}
+
+		Disabled: {
+			Tooltip: Does nothing.
+			Label: Disabled
+		}
+
+		Tooltip: ""
+	}
+
+	Gameplay: {
+		InfiniteConsumables: {
+			Tooltip: If enabled, stacks of 999+ mana potions, healing potions, weapons, ammunition, and other items will not be consumed on use. Buff potions are included, but in stacks of 30+ instead.
+			Label: Infinite Consumables
+		}
+
+		DisableAftermath: {
+			Tooltip: If enabled, any changes to the world scheduled to occur on boss defeat will not happen. This includes Wall of Flesh boxes.
+			Label: Disable Aftermath
+		}
+
+		Buffs: {
+			Tooltip: If enabled, buff items in stacks of 30 or greater will grant permanent buffs without a time limit and without consumption. Includes buff stations (their buffs must be removed manually by right clicking). Works from all inventories.
+			Label: Permanent Buffs
+		}
+
+		BuffsThreshold: {
+			Label: Permanent Buffs Threshold
+			Tooltip: The stack size at which potions and buff stations will begin granting permanent buffs.
+		}
+
+		ConsumablesThreshold: {
+			Label: Permanent Consumables Threshold
+			Tooltip: The stack size at which consumables will become infinite.
+		}
+
+		WindowColor: {
+			Label: Window Color
+			Tooltip: ""
+		}
+
+		MapTeleport: {
+			Label: Map Teleport
+			Tooltip: ""
+		}
+	}
+
+	FightStats: {
+		StatsColor.Tooltip: ""
+		Tooltip: ""
+	}
+
+	Presets: {
+		Vanilla: {
+			Label: Vanilla
+			Tooltip: Disables all settings that affect gameplay. Does not change anything else.
+		}
+
+		QoL: {
+			Label: Simple Quality of Life
+			Tooltip: Enables various settings impacting quality of life. Does not change or disable anything else.
+		}
+
+		Testing: {
+			Label: Testing
+			Tooltip: Enables a large number of settings relevant to Calamity testing.
+		}
+
+		Nohitting: {
+			Label: Nohitting
+			Tooltip: Enables a large number of settings relevant to Calamity nohitting.
+		}
+	}
+
+	CalamityConfig: {
+		DisplayName: Elsi's Calamity Mod Config
+		Headers.CalamityNohitting: Nohit Settings
+	}
+
+	Calamity: {
+		DebuffInstakill: {
+			Label: Specific Debuff Instakill
+			Tooltip: If enabled alongside instant death, both being hit by the Whispering Maelstrom and leaving Providence's border will instantly kill you.
+		}
+
+		BRKiller: {
+			Label: Show Killer (Boss Rush)
+			Tooltip: If enabled alongside Show End-Of-Fight Statistics, the boss you died to in Boss Rush will appear in fight statistics.
+		}
+
+		SkipTerminus: {
+			Label: Start Boss Rush Instantly
+			Tooltip: If enabled, using Terminus will start Boss Rush instantly, instead of having a five-second charge up period.
+		}
+	}
+
+	AttemptEnum: {
+		Tooltip: ""
+
+		False: {
+			Label: False
+			Tooltip: ""
+		}
+
+		Session: {
+			Label: Session
+			Tooltip: ""
+		}
+
+		Total: {
+			Label: Total
+			Tooltip: ""
+		}
+	}
+}
+
+Items: {
+	MobileStorages: {
+		DisplayName: Mobile Storages
+		Tooltip: Summons a mobile piggy bank, void bag, defender's forge, and safe on use. "Optrix made me do it"
+	}
+}
+
+Projectiles: {
+	MobileForge.DisplayName: Mobile Forge
+	MobileSafe.DisplayName: Mobile Safe
+}
